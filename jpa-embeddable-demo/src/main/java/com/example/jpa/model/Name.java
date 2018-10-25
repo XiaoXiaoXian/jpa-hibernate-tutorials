@@ -52,4 +52,13 @@ public class Name {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    @Override
+    public String toString() {
+        return "\r\n"+ super.toString()+ "\r\nName{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }

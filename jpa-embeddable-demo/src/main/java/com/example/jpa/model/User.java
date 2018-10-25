@@ -71,4 +71,14 @@ public class User {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "\r\n"+ super.toString()+"\r\nUser{" +
+                "id=" + id +
+                ", name=" + name +
+                ", email='" + email + '\'' +
+                ", address=" + address +
+                '}';
+    }
 }
